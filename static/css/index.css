@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+
+ul {
+ list-style: none;
+ padding: 0;
+}
+
+ul ul {
+ list-style: none;
+ color: white;
+}
+
+ul ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+
+/* @media (min-width: 768px){
+.container {
+    max-width: 720px;
+}
+} */
+
+
+/* Styling Socials */
+.navbar-nav .socials {
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.fa-twitter{
+	color: #46c0fb;
+    background-color: white;
+}
+
+.fa-instagram{
+	color: #cb2027;
+}
+
+.fa-facebook{
+	background: #3B5998;
+	color: #FFFFFF;
+    padding: 0.05em 0.3em;
+}
+
+.fa-youtube{
+	background: #bb0000;
+	color: #FFFFFF;
+}
+
+.nav-item [class*="fa fa-"] {
+    border: 1px solid white;
+    border-radius: 25px;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #9966cc;  
+    position: relative;
+    margin-top: 25px;
+}
+
+.logo figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    z-index: 5;
+}
+.logo h4 {
+    margin-left: 105px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Nav styling */
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.header nav ul li {
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.header nav ul li:last-child {
+    margin-right: 0;
+}
+
+
+.header nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+
+/* Animation Section */
+@keyframes animateShow{
+
+    0%  {
+        height: 0;
+    }
+    25% {
+        height: 0.25;
+    }
+    50% {
+        height: 0.5;
+    }
+    75% {
+        height: 0.75;
+    }
+    100% {
+        height: 1;
+    }
+}
+
+@keyframes showLI {
+    from  {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* End */
+
+.header nav ul li a:hover{
+    background-color: #8a2be2;
+    transition: all 0.5s ease-in;
+}
+
+/* Breadcrum Styling */
+.breadcrum {
+    cursor: pointer;
+    display: none;
+}
+
+.breadcrum-item{
+    border: 1px solid white;
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.img-fade {
+    opacity: 0.3;
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.btn:hover {
+    /* background-color: rgb(51, 51, 158); */
+    transition: all 0.5s ease-in;
+}
+
+.btn-formal {
+    background-color: blue;
+    margin-top: 20px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+
+
+
+
+@media all and ( max-width: 991px ) {
+    .breadcrum {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header {
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .header .navbar .nav-content {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background-color:#9966cc;
+        left: 0;
+        right: 0;
+        top: 100%;
+    }
+
+    /* Animating to slide in the nav */
+    .header .navbar .show {
+        animation: animateShow 0.1s ease-in;
+        z-index: 1;
+        overflow: hidden;
+        display: block;
+    }/* end */
+
+
+    .header .nav-content li {
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .header .nav-content .showLI {
+        animation: showLI 0.5s ease-in;
+       
+    }
+
+    .hero {
+        background-color: plum;
+    }
+
+    .hero .hero-content {
+        display: flex;
+        justify-content: center; 
+        padding: 50px 10px;
+        gap: 20px;
+        background: linear-gradient(rgba(80, 95, 221, 0.8), rgba(195, 55, 100, 0.8)), url("/images/IMG-20220202-WA0045.jpg"); /* The least supported option. */
+
+    }
+
+    .hero-left header h1, .hero-left .hero-body p {
+        text-align: center;
+        color: black;
+    }
+
+    .hero-left .hero-body p{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .hero-left button {
+        margin: auto;
+    }
+
+    .hero-content .hero-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-content .hero-left button, .hero-content .hero-left p{
+        margin-top: 20px;
+    }
+
+        /* Feed Styling */
+    .section-padding {
+        padding: 50px 20px;
+        background-color: #9966cc;
+    }
+
+    .section-padding .feed-content h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .section-padding .feed-content .col {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+    .section-padding .feed-content .col .feed-child{
+        margin: 5px auto;
+    }
+
+    .section-padding .feed-content .col .feed-child img {
+        min-width: 200px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+    /* MILE STONE */
+    section .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
+    .section-padding .title {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+    }
+
+    section .milestone {
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+
+    .mx-auto {
+        margin-left: auto !important;
+    }
+
+    .justify-content-center {
+    justify-content: center !important;
+    }
+
+    section .milestone h1 {
+        color: #f96d02;
+        font-weight: 700;
+        font-size: 3.3rem;
+    }
+
+    section .social-links {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    section .social-links li a {
+    color: #f96d02;
+    display: block;
+    transition: all .3s ease-in-out;
+    }
+
+    .milestone-section .social-links li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid #f96d02;
+    padding: 3px;
+    margin: 0 5px;
+    }
+
+
+    footer .newsletter {
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid #313131;
+    margin-bottom: 2rem;
+    }
+
+   footer .newsletter form {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    }
+
+}
