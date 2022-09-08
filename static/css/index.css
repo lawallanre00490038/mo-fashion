@@ -89,7 +89,7 @@ footer ul ul li a {
     height: 100px;
     border-radius: 50%;
     position: absolute;
-    top: -25px;
+    top: -20px;
     z-index: 5;
 }
 .logo h4 {
@@ -212,7 +212,8 @@ footer ul ul li a {
 
     .header {
         justify-content: space-between;
-        padding: 15px;
+        align-items: center;
+        padding: 0 15px;
         position: fixed;
         left: 0;
         right: 0;
@@ -254,6 +255,10 @@ footer ul ul li a {
         gap: 20px;
         background: linear-gradient(rgba(80, 95, 221, 0.8), rgba(195, 55, 100, 0.8)), url("/images/IMG-20220202-WA0045.jpg"); /* The least supported option. */
 
+    }
+
+    .hero-left header h1 {
+        margin-top: 50px;
     }
 
     .hero-left header h1, .hero-left .hero-body p {
