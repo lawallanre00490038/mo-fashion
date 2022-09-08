@@ -213,6 +213,10 @@ footer ul ul li a {
     .header {
         justify-content: space-between;
         padding: 15px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 10;
     }
 
     .header .navBar .nav-content {
@@ -365,11 +369,20 @@ footer ul ul li a {
     }
 
 
+    /* FOOTER */
+    /* footer {
+        background-color: black;
+    } */
     footer .newsletter {
     text-align: center;
     font-size: 1.2em;
     border-bottom: 1px solid #313131;
     margin-bottom: 2rem;
+    
+    }
+
+    footer .newsletter p {
+        font-weight: bolder;
     }
 
    footer .newsletter form {
