@@ -5,23 +5,18 @@
     font-family:'Courier New', Courier, monospace;
 }
 
-a {
-    text-decoration: none;
-    display: block;
-}
 
-
-ul {
+footer ul {
  list-style: none;
  padding: 0;
 }
 
-ul ul {
+footer ul ul {
  list-style: none;
  color: white;
 }
 
-ul ul li a {
+footer ul ul li a {
     text-decoration: none;
     color: white;
 }
@@ -44,7 +39,7 @@ ul ul li a {
 
 
 /* Styling Socials */
-.navbar-nav .socials {
+.navBar-nav .socials {
     text-align: center;
     padding-bottom: 2px;
 }
@@ -184,6 +179,7 @@ ul ul li a {
     opacity: 0.3;
 }
 
+/* BUTTON STYLING */
 .btn {
     width: 160px;
     height: 40px;
@@ -208,7 +204,7 @@ ul ul li a {
     text-decoration: none;
     color: white;
     display: block;
-}
+}/* BUTTON STYLING END */
 
 
 
@@ -225,7 +221,7 @@ ul ul li a {
         padding: 15px;
     }
 
-    .header .navbar .nav-content {
+    .header .navBar .nav-content {
         display: none;
         position: absolute;
         flex-direction: column;
@@ -236,18 +232,12 @@ ul ul li a {
     }
 
     /* Animating to slide in the nav */
-    .header .navbar .show {
+    .header .navBar .show {
         animation: animateShow 0.1s ease-in;
         z-index: 1;
         overflow: hidden;
         display: block;
     }/* end */
-
-
-    .header .nav-content li {
-        margin-right: 0;
-        text-align: left;
-    }
 
     .header .nav-content .showLI {
         animation: showLI 0.5s ease-in;
