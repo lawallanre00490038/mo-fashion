@@ -22,14 +22,6 @@ footer ul ul li a {
 }
 
 
-/* .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-} */
-
 
 /* @media (min-width: 768px){
 .container {
@@ -79,7 +71,7 @@ footer ul ul li a {
     justify-content: space-around;
     align-items: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #9966cc;  
+    background-color: #9966cc;
     position: relative;
     margin-top: 25px;
 }
@@ -403,5 +395,10 @@ footer ul ul li a {
     .foot-note {
         text-align: center;
         font-size: 15px;
+        opacity: 0.5;
     }
+    footer.section-padding {
+    padding-top: 3rem;
+    padding-bottom: 0;
+}
 }
