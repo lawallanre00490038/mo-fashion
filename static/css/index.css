@@ -316,6 +316,9 @@ footer ul ul li a {
 
 
     /* MILE STONE */
+    .hero-content {
+    background-color: #fff;
+    }
     section .section-padding {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -394,5 +397,11 @@ footer ul ul li a {
     margin-top: 3rem;
     margin-bottom: 3rem;
     }
-
+    .col-md-4 ul li a, .foot-note, .foot-note a{
+        color: white;
+    }
+    .foot-note {
+        text-align: center;
+        font-size: 15px;
+    }
 }
