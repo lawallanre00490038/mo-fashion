@@ -39,7 +39,7 @@ footer ul ul li a {
         justify-content: center; 
         padding: 50px 10px;
         gap: 20px;
-        background: linear-gradient(rgba(80, 95, 221, 0.8), rgba(195, 55, 100, 0.8)), url("/images/IMG-20220202-WA0045.jpg"); /* The least supported option. */
+        background: linear-gradient(rgba(80, 95, 221, 0.8), rgba(195, 55, 100, 0.8)), url("../../images/IMG-20220202-WA0045.jpg"); /* The least supported option. */
 
     }
 
