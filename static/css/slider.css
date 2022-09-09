@@ -2,7 +2,7 @@
     
 .swiper {
 padding: 20px 0;
-height: 50vh;
+height: 60vh;
 margin: auto;
 }
 .swiper-container {
@@ -34,7 +34,6 @@ font-size: 3rem;
 line-height: 1;
 max-width: 50%;
 white-space: normal;
-/* word-break: break-word; */
 color: #FFF;
 z-index: 100;
 font-family: 'Oswald', sans-serif;

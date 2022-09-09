@@ -22,12 +22,142 @@ footer ul ul li a {
 }
 
 
+/* DESKTOP VIEW */
 
-/* @media (min-width: 768px){
-.container {
-    max-width: 720px;
+@media (min-width: 991px){
+    body {
+        background-color: #8a2be2;
+    }
+
+
+    .hero {
+        background-color: plum;
+    }
+
+    .hero .hero-content {
+        display: flex;
+        justify-content: center; 
+        padding: 50px 10px;
+        gap: 20px;
+        background: linear-gradient(rgba(80, 95, 221, 0.8), rgba(195, 55, 100, 0.8)), url("/images/IMG-20220202-WA0045.jpg"); /* The least supported option. */
+
+    }
+
+    .hero-left header h1 {
+        margin-top: 50px;
+    }
+
+    .hero-left header h1, .hero-left .hero-body p {
+        text-align: center;
+        color: black;
+    }
+
+    .hero-left .hero-body p{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .hero-left button {
+        margin: auto;
+    }
+
+    .hero-content .hero-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-content .hero-left button, .hero-content .hero-left p{
+        margin-top: 20px;
+    }
+
+
+
+    /* FEED STYLING */
+    .section-padding{
+        padding: 50px 20px;
+        background-color: #9966cc;
+    }
+
+    .section-padding .feed-content h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .section-padding .feed-content .col {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+    .section-padding .feed-content .col .feed-child{
+        margin: 5px auto;
+    }
+
+    .section-padding .feed-content .col .feed-child img {
+        min-width: 200px;
+        width: 300px;
+        height: 300px;
+    }
+    section .title {
+    margin-bottom: 6rem;
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px
+    }
+
+    section .title:before {
+    content: "";
+    width: 30px;
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    }
+
+
+    footer .newsletter {
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid #313131;
+    margin-bottom: 2rem;
+    padding: 50px 0;
+    }
+
+    footer .newsletter form .form-control {
+    border-radius: 50px;
+    padding: 9px 15px;
+    font-size: 1.2rem;
+    height: auto;
+    background-color: #0f0f0f;
+    border-color: #313131;
+    border-width: 2px;
+    }
+
+    footer .foot-note {
+        opacity: .5;
+        text-align: center;
+        font-size: .8em;
+    }
+
+    .btn-corporate {
+    border-radius: 50px;
+    padding: 7px 25px;
+    font-size: 1.3rem;
+    min-width: 250px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f96d02;
 }
-} */
+}
 
 
 /* Styling Socials */
@@ -76,6 +206,12 @@ footer ul ul li a {
     margin-top: 25px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo figure img{
     width: 100px;
     height: 100px;
@@ -86,6 +222,7 @@ footer ul ul li a {
 }
 .logo h4 {
     margin-left: 105px;
+    margin-bottom: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -95,6 +232,7 @@ footer ul ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
  
 .header nav ul li {
@@ -161,13 +299,13 @@ footer ul ul li a {
     margin-bottom: 5px;
 }
 
-.img-fade {
-    opacity: 0.3;
+.breadcrum-item:last-child {
+    margin-bottom: 0;
 }
 
 /* BUTTON STYLING */
 .Btn {
-    width: 160px;
+    width: 180px;
     height: 50px;
     border: 0;
     border-radius: 10px;
@@ -183,7 +321,10 @@ footer ul ul li a {
 
 .Btn-formal {
     background-color: blue;
-    margin-top: 20px;
+    
+}
+.Btn-mg {
+    margin-top: 0;
 }
 
 .Btn a {
@@ -195,7 +336,7 @@ footer ul ul li a {
 
 
 
-
+/* MOBILE VIEW */
 @media all and ( max-width: 991px ) {
     .breadcrum {
         display: block;
@@ -205,11 +346,16 @@ footer ul ul li a {
     .header {
         justify-content: space-between;
         align-items: center;
-        padding: 0 15px;
+        padding: 10px 15px;
         position: fixed;
         left: 0;
         right: 0;
         z-index: 10;
+        margin-top: 30px;
+    }
+
+    .logo figure img{
+    top: -25px;
     }
 
     .header .navBar .nav-content {
@@ -236,6 +382,7 @@ footer ul ul li a {
        
     }
 
+    /* HERO STYLING */
     .hero {
         background-color: plum;
     }
@@ -279,7 +426,7 @@ footer ul ul li a {
     }
 
         /* Feed Styling */
-    .section-padding {
+    .section-padding{
         padding: 50px 20px;
         background-color: #9966cc;
     }
@@ -369,10 +516,12 @@ footer ul ul li a {
     }
 
 
+    /* remove margin on btn */
+    .Btn-mg {
+    margin-top: 20px;
+    }
+
     /* FOOTER */
-    /* footer {
-        background-color: black;
-    } */
     footer .newsletter {
     text-align: center;
     font-size: 1.2em;
