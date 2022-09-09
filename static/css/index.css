@@ -138,8 +138,7 @@ footer ul ul li a {
     padding: 9px 15px;
     font-size: 1.2rem;
     height: auto;
-    background-color: #0f0f0f;
-    border-color: #313131;
+    border: 0;
     border-width: 2px;
     }
 
