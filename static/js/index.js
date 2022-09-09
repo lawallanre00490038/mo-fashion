@@ -3,12 +3,15 @@ const body = document.querySelector("body");
 breadcrum.onclick = function(){
     const nav = document.querySelector(".nav-content");
     const li = document.querySelectorAll(".nav-content li")
-    nav.classList.toggle("show");
     
+    nav.classList.toggle("show");
+
+      // Animate links 
     li.forEach(elem => {
         elem.classList.toggle("showLI");
-        // elem.classList.toggle("showLIs");
     });
+
+
 }
 
 

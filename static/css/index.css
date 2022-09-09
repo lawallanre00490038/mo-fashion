@@ -101,6 +101,7 @@ footer ul ul li a {
         width: 300px;
         height: 300px;
     }
+
     section .title {
     margin-bottom: 6rem;
     color: #fff;
@@ -159,6 +160,8 @@ footer ul ul li a {
 }
 }
 
+
+/* GENERAL STYLING */
 
 /* Styling Socials */
 .navBar-nav .socials {
@@ -293,6 +296,10 @@ footer ul ul li a {
     display: none;
 }
 
+.breadcrum:hover .breadcrum-item {
+    border: 1.5px solid white;
+}
+
 .breadcrum-item{
     border: 1px solid white;
     width: 40px;
@@ -315,12 +322,12 @@ footer ul ul li a {
 }
 
 .Btn:hover {
-    background-color: rgb(51, 51, 158);
+    background-color: yellowgreen;
     transition: all 0.5s ease-in;
 }
 
 .Btn-formal {
-    background-color: rgb(81, 81, 221);
+    background-color: green;
     
 }
 .Btn-mg {
@@ -333,6 +340,42 @@ footer ul ul li a {
     display: block;
 }/* BUTTON STYLING END */
 
+
+
+/* SOCIALS STYLING and MILESTONE*/
+section .milestone h1 {
+        color: green;
+        font-weight: 700;
+        font-size: 3.3rem;
+    }
+
+    section .social-links li a {
+    color: green;
+    display: block;
+    transition: all .3s ease-in-out;
+    }
+
+    
+.milestone-section .social-links {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    .milestone-section .social-links li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid green;
+    padding: 3px;
+    margin: 0 5px;
+}
+
+.form-control {
+    border-radius: 50px;
+}
 
 
 
@@ -487,35 +530,7 @@ footer ul ul li a {
     justify-content: center !important;
     }
 
-    section .milestone h1 {
-        color: #f96d02;
-        font-weight: 700;
-        font-size: 3.3rem;
-    }
-
-    section .social-links {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    section .social-links li a {
-    color: #f96d02;
-    display: block;
-    transition: all .3s ease-in-out;
-    }
-
-    .milestone-section .social-links li {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 33px;
-    border-radius: 50px;
-    text-align: center;
-    border: 1px solid #f96d02;
-    padding: 3px;
-    margin: 0 5px;
-    }
+    
 
 
     /* remove margin on btn */
