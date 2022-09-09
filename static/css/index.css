@@ -322,12 +322,12 @@ footer ul ul li a {
 }
 
 .Btn:hover {
-    background-color: yellowgreen;
+    background-color: #7f01f5;
     transition: all 0.5s ease-in;
 }
 
 .Btn-formal {
-    background-color: green;
+    background-color: #8a2be2;
     
 }
 .Btn-mg {
@@ -344,13 +344,13 @@ footer ul ul li a {
 
 /* SOCIALS STYLING and MILESTONE*/
 section .milestone h1 {
-        color: green;
+        color: white;
         font-weight: 700;
         font-size: 3.3rem;
     }
 
     section .social-links li a {
-    color: green;
+    color: white;
     display: block;
     transition: all .3s ease-in-out;
     }
