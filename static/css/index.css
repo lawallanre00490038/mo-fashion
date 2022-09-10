@@ -29,7 +29,6 @@ footer ul ul li a {
         background-color: #8a2be2;
     }
 
-
     .hero {
         background-color: plum;
     }
@@ -244,7 +243,7 @@ footer ul ul li a {
     border: none;
 }
 
-.header nav ul li a {
+.header nav ul li>a {
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -293,21 +292,21 @@ footer ul ul li a {
 .breadcrum {
     cursor: pointer;
     display: none;
+    background-color: white;
+    text-align: center;
 }
 
-.breadcrum:hover .breadcrum-item {
-    border: 1.5px solid white;
-}
-
-.breadcrum-item{
-    border: 1px solid white;
+.breadcrum .fa-bars{
     width: 40px;
-    margin-bottom: 5px;
+    height: 30px;
+    line-height: 30px;
 }
 
-.breadcrum-item:last-child {
-    margin-bottom: 0;
+.breadcrum:hover {
+  background-color: #ddd;
+  color: black;
 }
+
 
 /* BUTTON STYLING */
 .Btn {
@@ -532,14 +531,6 @@ section .milestone h1 {
     justify-content: center !important;
     }
 
-    
-
-
-    /* remove margin on btn */
-    .Btn-mg {
-    margin-top: 20px;
-    }
-
     /* FOOTER */
     footer .newsletter {
     text-align: center;
@@ -569,4 +560,12 @@ section .milestone h1 {
     padding-top: 3rem;
     padding-bottom: 0;
 }
+
+    
+}
+
+@media all and (max-width: 765px){
+    .hf-fields-wrap .Btn-mg {
+        margin-top: 20px;
+    }
 }

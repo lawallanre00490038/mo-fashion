@@ -1,17 +1,10 @@
-const breadcrum =  document.querySelector(".breadcrum");
-const body = document.querySelector("body");
-breadcrum.onclick = function(){
-    const nav = document.querySelector(".nav-content");
-    const li = document.querySelectorAll(".nav-content li")
-    
-    nav.classList.toggle("show");
-
-      // Animate links 
-    li.forEach(elem => {
-        elem.classList.toggle("showLI");
-    });
-
-
+function myFunction() {
+  const nav = document.querySelector(".nav-content");
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+  } else {
+    nav.style.display = "block";
+  }
 }
 
 
