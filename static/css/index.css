@@ -303,7 +303,7 @@ footer ul ul li a {
 }
 
 .breadcrum:hover {
-  background-color: purple;
+  background-color: #8a2be2;
 }
 
 
@@ -566,5 +566,8 @@ section .milestone h1 {
 @media all and (max-width: 765px){
     .hf-fields-wrap .Btn-mg {
         margin-top: 20px;
+    }
+    .logo h4 {
+        font-size: 20px;
     }
 }
