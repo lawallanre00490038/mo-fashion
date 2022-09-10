@@ -292,7 +292,6 @@ footer ul ul li a {
 .breadcrum {
     cursor: pointer;
     display: none;
-    background-color: white;
     text-align: center;
 }
 
@@ -300,6 +299,7 @@ footer ul ul li a {
     width: 40px;
     height: 30px;
     line-height: 30px;
+    color: white;
 }
 
 .breadcrum:hover {
