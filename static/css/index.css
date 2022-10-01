@@ -6,6 +6,24 @@
 }
 
 
+body h1 {
+    font-weight: bold;
+} 
+
+.hero .hero-left .hero-body p, .hero .hero-left header h1 {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer h5, footter p{
+    font-weight: bolder;
+
+}
+
+
 footer ul {
  list-style: none;
  padding: 0;
@@ -553,7 +571,7 @@ section .milestone h1 {
     .foot-note {
         text-align: center;
         font-size: 15px;
-        opacity: 0.5;
+        /* opacity: 0.5; */
     }
     footer.section-padding {
     padding-top: 3rem;
